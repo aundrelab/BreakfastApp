@@ -1,4 +1,3 @@
-
 import random
 from models import week_menu
 
@@ -9,8 +8,8 @@ main_dish = [
     "French Toast",
     "Crepes",
     "Cereal",
-    "Breaksfast Burrito",
-    "Acai Breaksfast Bowl",
+    "Breaksfast Burrito"
+    "Acai Breaksfast Bowl"
     ]
     
 side_dish = [
@@ -39,11 +38,6 @@ drinks = [
     "Cranberry Juice",
     "Hot Chocolate",
     ]
-<<<<<<< HEAD
-    
-    
-=======
 
 
 okay = week_menu.put(drinks)
->>>>>>> d74e9253f33d24b5383cd5e9a7d60c4a4904c7e7
