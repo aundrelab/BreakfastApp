@@ -1,4 +1,3 @@
-
 import random
 from models import week_menu
 
