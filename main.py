@@ -67,11 +67,37 @@ def get_drinks():
 class HomeHandler(webapp2.RequestHandler):
     def get(self):  # for a get request
     
+    #     main_dish = get_main_dish()
+    #     print(main_dish)
+        
+    #     side_dish = get_side_dish()
+    #     print(side_dish)
+        
+    #     drinks = get_drinks()
+    #     print(drinks)
+        
+    #     my_dictionary = {
+    #         'main': main_dish,
+    #         "sides": side_dish,
+    #         "drink": drinks
+            
+    #     }
+        
+        end_template=the_jinja_env.get_template("templates/welcome.html")
+        self.response.write(end_template.render())
+
+
+        
+class MealsHandler(webapp2.RequestHandler):
+    def get(self):  # for a get request
         main_dish = get_main_dish()
         print(main_dish)
         
         side_dish = get_side_dish()
+        print(side_dish)
+        
         drinks = get_drinks()
+        print(drinks)
         
         my_dictionary = {
             'main': main_dish,
@@ -80,15 +106,8 @@ class HomeHandler(webapp2.RequestHandler):
             
         }
         
-        end_template=the_jinja_env.get_template("templates/results.html")
-        self.response.write(end_template.render(my_dictionary))
-
-
-        
-class MealsHandler(webapp2.RequestHandler):
-    def get(self):  # for a get request
         welcome_template = the_jinja_env.get_template('templates/meals.html')
-        self.response.write(welcome_template.render())
+        self.response.write(welcome_template.render(my_dictionary))
         
 class HistoryHandler(webapp2.RequestHandler):
     def get(self):  # for a get request

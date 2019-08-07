@@ -6,24 +6,38 @@ body {
 .main{
     /*margin: 0;*/
     /*padding: 0;*/
+    display: flex;
     font-family: Century Gothic;
     font-weight: bold;
-    color: #fff;
+    color: black;
     float: right;
+    background-color: white;
+}
+
+
+
+header{
+    /*background-image: url(../images/breakfastpic.jpg);*/
+    /*height: 50vh;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    background-color: #FFFBEF;
     
 }
 
-header{
+
+#logo{
+    display: flex;
+    text-align: center;
+    border-bottom: none;
+}
+
+.background{
     background-image: url(../images/breakfastpic.jpg);
     height: 50vh;
     background-size: cover;
     background-position: center;
 }
-
-/*.background{*/
-/*    background-image: url(../images/better.jpg);*/
-/*    background-position: bottom;*/
-/*}*/
 
 ul{
     list-style-type: none;
@@ -37,10 +51,10 @@ ul li{
 
 ul li a{
     text-decoration: none;
-    color: #fff;
+    color: black;
     padding: 5px 25px;
     font-size: larger;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 
 ul li a: hover{
