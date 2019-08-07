@@ -1,7 +1,7 @@
 import webapp2
 import jinja2
 import os
-from models import Breakfast
+from models import menu
 
 
 the_jinja_env = jinja2.Environment(
@@ -47,11 +47,3 @@ drinks = [
     "Cranberry Juice",
     "Hot Chocolate",
     ]
-<<<<<<< HEAD
-    
-    
-=======
-
-
-okay = week_menu.put(drinks)
->>>>>>> d74e9253f33d24b5383cd5e9a7d60c4a4904c7e7

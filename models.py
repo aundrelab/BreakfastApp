@@ -12,7 +12,7 @@ from google.appengine.ext import ndb
 #     name = ndb.StringProperty()
 #     recipe_url = ndb.StringProperty()
 
-class week_menu(ndb.Model):
+class menu(ndb.Model):
     day = ndb.StringProperty()
     main_dish_name = ndb.StringProperty()
     main_dish_url = ndb.StringProperty()
