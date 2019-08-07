@@ -8,8 +8,8 @@ main_dish = [
     "French Toast",
     "Crepes",
     "Cereal",
-    "Breaksfast Burrito"
-    "Acai Breaksfast Bowl"
+    "Breaksfast Burrito",
+    "Acai Breaksfast Bowl",
     ]
     
 side_dish = [
@@ -38,3 +38,5 @@ drinks = [
     "Cranberry Juice",
     "Hot Chocolate",
     ]
+    
+    
