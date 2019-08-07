@@ -1,6 +1,14 @@
+import webapp2
+import jinja2
+import os
+from models import Breakfast
 
-import random
-from models import week_menu
+
+the_jinja_env = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
+    extensions=['jinja2.ext.autoescape'],
+    autoescape=True)
+
 
 main_dish = [
     "Eggs Benedict",
