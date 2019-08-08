@@ -33,34 +33,32 @@ body{
     display: inline-block;
     width: auto;
     height: auto;
-    /*padding: 10px 5px;*/
+    padding: 10px 5px;
 }
 
 .navigation-bar li a{
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 25px;
     font-family: "Times New Roman", Times, serif;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: bolder;
     width: auto;
+    border: 2px solid white;
 }
 
-.active{
-    font-family: "Times New Roman", Times, serif;
-    font-size: 15px;
+.navigation-bar li.home a{
     background-color: white;
     color: black;
-    font-weight: bold;
-    border: 1px solid white;
-    padding: 10px 25px;
 }
 
-.active:hover{
-    color: white;
+.navigation-bar li.home a:hover{
     background-color: black;
-    border: 3px black;
+    color: white;
+    border: solid black;
 }
+
+
 
 .navigation-bar li a:hover{
     border: 3px solid white;
@@ -74,8 +72,6 @@ body{
     float: left;
     padding-top: 5px;
     border-radius: 50%;
-    
-    
 }
 
 body{
@@ -102,7 +98,10 @@ h1{
     text-align: center;
     margin-top: -215px;
     margin-left: 55px;
-    text-shadow: 0 0 50px #A9D9FE; /* horizontal-offset vertical-offset 'blur' colour */
+    text-shadow: 0 0 50px #A9D9FE;
     -moz-text-shadow: 0 0 50px #A9D9FE;
     -webkit-text-shadow: 0 0 50px #A9D9FE;
+    height: auto;
+    width: auto
 }
+
