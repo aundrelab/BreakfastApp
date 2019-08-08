@@ -119,7 +119,7 @@ class MealsHandler(webapp2.RequestHandler):
             "main_name": main[0],
             "image": main[1],
             "recipe": main[2],
-            "side_name"
+            "side_name": main[3]
         }
         
         welcome_template = the_jinja_env.get_template('templates/.html')
