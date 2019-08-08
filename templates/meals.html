@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 
 <head>
-    <style type="text/css">
-        .container{
-            
-        }
-    </style>
+  
   <meta charset="UTF-8">
   <title>Breakfast 4 You.</title>
-  <link rel="stylesheet" href="style.css">
-  <link type= "text/css" rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="meals.css">
+  <link type= "text/css" rel="stylesheet" href="static/meals.css">
 </head>
 <body>
     <div class="background">
         <header>
-
-        
-        <div class="container">
-            {{main_name}} <br>
-            <a href={{recipe}}><img  width=50% height=50% src={{image}}></a>
-            
-            {{side_name}}
+        <!--<div class="row">-->
+        <!--    <div class="column">-->
+        <!--      <img src={{image}} style="width:100%">-->
+        <!--    </div>-->
+        <!--    <div class="column">-->
+        <!--      <img src={{image}} style="width:100%">-->
+        <!--    </div>-->
+        <!--    <div class="column">-->
+        <!--      <img src={{image}} style="width:100%">-->
+        <!--    </div>-->
+        <!--</div>-->
+        <div class="grid-container">
+          <div class="main_name">{{main_name}}</div> <br>
+          <div class="side_name">{{side_name}}</div> <br>
+          <div class="drink_name">{{drink_name}}</div> <br> 
+          <div class="item4"><a href={{recipe}}><img  width=50% height=50% src={{image}}></a></div>
+  
+          <!--<div class="item7">7</div>-->
+          <!--<div class="item8">8</div>-->
+          <!--<div class="item9">9</div>  -->
+          <!--<div class="item10">10</div>-->
+          <!--<div class="item11">11</div>-->
+          <!--<div class="item12">12</div>-->
         </div>
+
+        <!--<div class="container">-->
+        <!--    {{main_name}} <br>-->
+        <!--    <a href={{recipe}}><img  width=50% height=50% src={{image}}></a>-->
+            
+        <!--    {{side_name}}-->
+        <!--    {{drink_name}}-->
+        <!--</div>-->
         
         </header>
     </div>
-    <input type = 'submit' value = 'Create'>
+
 </body>
