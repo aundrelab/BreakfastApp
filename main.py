@@ -122,8 +122,8 @@ class MealsHandler(webapp2.RequestHandler):
             "side_name": main[3]
         }
         
-        welcome_template = the_jinja_env.get_template('templates/.html')
-        self.response.write(welcome_template.render(my_dictionary))
+        welcome_template = the_jinja_env.get_template('templates/meals.html')
+        self.response.write(welcome_template.render(the_variable_dict))
         
 class HistoryHandler(webapp2.RequestHandler):
     def get(self):  # for a get request
