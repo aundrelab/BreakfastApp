@@ -4,13 +4,10 @@ import os
 from models import Breakfast
 from google.appengine.api import users
 import random
-
-
 the_jinja_env = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
-
 # def breakfast_meal():
 #     breakfast_dict = [
 #         "main_dish":{
@@ -29,7 +26,6 @@ the_jinja_env = jinja2.Environment(
 #         }
 #     ]
 #     return random.choice(breakfast_dict)
-
 def get_main_dish():
     main_dish = [
         ["Eggs Benedict","https://www.simplyrecipes.com/wp-content/uploads/2010/04/eggs-benedict-vertical-a-1600.jpg", "https://www.simplyrecipes.com/recipes/eggs_benedict/"],
@@ -38,17 +34,17 @@ def get_main_dish():
         ["French Toast","https://food.fnr.sndimg.com/content/dam/images/food/fullset/2008/3/26/0/IE0309_French-Toast.jpg.rend.hgtvcom.826.620.suffix/1431730431340.jpeg","https://www.foodnetwork.com/recipes/robert-irvine/french-toast-recipe-1951408"],
         ["Crepes","https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-basic-crepes-horizontal-1545245797.jpg?crop=0.6668xw:1xh;center,top&resize=980:*","https://www.delish.com/cooking/recipe-ideas/recipes/a52114/easy-basic-crepe-recipe/"],
         ["Cereal","https://images.media-allrecipes.com/userphotos/250x250/338461.jpg","https://www.allrecipes.com/recipe/44162/homemade-cereal/"],
-        ["Breaksfast Burrito","https://images-gmi-pmc.edge-generalmills.com/b313435a-e9b8-49de-8088-ba7082c4d2dd.jpg","https://www.pillsbury.com/recipes/easy-breakfast-burritos/2fd0666e-79c3-40e8-a375-7be8e6db7360"],
+        ["Breakfast Burrito","https://images-gmi-pmc.edge-generalmills.com/b313435a-e9b8-49de-8088-ba7082c4d2dd.jpg","https://www.pillsbury.com/recipes/easy-breakfast-burritos/2fd0666e-79c3-40e8-a375-7be8e6db7360"],
         ["Acai Breaksfast Bowl","https://theforkedspoon.com/wp-content/uploads/2016/07/acai-bowl-5.jpg.webp","https://theforkedspoon.com/acai-bowl/"],
-        ["Huevos Rancheros","https://i2.wp.com/aspicyperspective.com/wp-content/uploads/2017/10/the-best-huevos-ranchero-recipe-16.jpg","https://i2.wp.com/aspicyperspective.com/wp-content/uploads/2017/10/the-best-huevos-ranchero-recipe-16.jpg"],
+        ["Huevos Rancheros","https://i2.wp.com/aspicyperspective.com/wp-content/uploads/2017/10/the-best-huevos-ranchero-recipe-16.jpg","https://www.aspicyperspective.com/best-huevos-rancheros-recipe/"],
         ["Oat Meal","https://fitfoodiefinds.com/wp-content/uploads/2015/10/50-best-oatmeal-recipes.png","https://fitfoodiefinds.com/the-50-best-oatmeal-recipes-on-the-planet/"],
         ["Omelet","https://x9wsr1khhgk5pxnq1f1r8kye-wpengine.netdna-ssl.com/wp-content/uploads/basic-french-omelet-930x550.jpg","https://www.incredibleegg.org/recipe/basic-french-omelet/"],
         ["Country-Fried Steak","https://www.momontimeout.com/wp-content/uploads/2018/08/best-chicken-fried-steak-recipe.jpg","https://www.momontimeout.com/chicken-fried-steak-recipe-with-gravy/"],
         ["Quesadillas","https://www.cookingclassy.com/wp-content/uploads/2019/02/quesadillas-2.jpg","https://www.cookingclassy.com/quesadillas/"],
         ["Breakfast Sandwhich","https://pinchofyum.com/wp-content/uploads/Breakfast-Sandwich-1.jpg","https://pinchofyum.com/breakfast-sandwich"]
         ]
-    return main_dish[0]
-    # return random.choice(main_dish)
+    
+    return random.choice(main_dish)
     
 def get_side_dish():
     side_dish = [
@@ -108,8 +104,6 @@ class HomeHandler(webapp2.RequestHandler):
         
         end_template = the_jinja_env.get_template("templates/welcome.html")
         self.response.write(end_template.render(the_variable_dict))
-
-
         
 class MealsHandler(webapp2.RequestHandler):
     def get(self):  # for a get request
@@ -117,12 +111,28 @@ class MealsHandler(webapp2.RequestHandler):
         the_variable_dict = {
             "main_name": main[0],
             "image": main[1],
-            "recipe": main[2],
-            "side_name" : main[3]
+            "recipe": main[2]
+            
         }
         
-        welcome_template = the_jinja_env.get_template('templates/.html')
+        side = get_side_dish()
+        second_variable_dict = {
+            "side_name": side[0],
+            "image": side[1],
+            "recipe": side[2]
+        }
+        
+        drink = get_drinks()
+        third_variable_dict = {
+            "drink_name": drink[0],
+            "image": drink[1],
+            "recipe": drink[2]
+        }
+        
+        welcome_template = the_jinja_env.get_template('templates/meals.html')
         self.response.write(welcome_template.render(the_variable_dict))
+        self.response.write(welcome_template.render(second_variable_dict))
+        self.response.write(welcome_template.render(third_variable_dict))
         
 class HistoryHandler(webapp2.RequestHandler):
     def get(self):  # for a get request
