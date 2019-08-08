@@ -5,6 +5,11 @@ threadsafe: true
 handlers:
 - url: /static
   static_dir: static
+<<<<<<< HEAD
+=======
+
+  
+>>>>>>> 071a560366e4ae3a5d1431d1e17da202a9df0b5a
 - url: /.*
   script: main.app
   
