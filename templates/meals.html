@@ -1,5 +1,11 @@
 <!DOCTYPE html>
+
 <head>
+    <style type="text/css">
+        .container{
+            
+        }
+    </style>
   <meta charset="UTF-8">
   <title>Breakfast 4 You.</title>
   <link rel="stylesheet" href="style.css">
@@ -10,14 +16,14 @@
         <header>
 
         
-        <div>
-            <label for="main">Your Breakfast: </label>
-            <p>{{main}}</p>
-            <p>{{sides}}</p>
-            <p>{{drink}}</p>
-
+        <div class="container">
+            {{main_name}} <br>
+            <a href={{recipe}}><img  width=50% height=50% src={{image}}></a>
+            
+            {{side_name}}
         </div>
         
         </header>
     </div>
+    <input type = 'submit' value = 'Create'>
 </body>

@@ -11,11 +11,28 @@ the_jinja_env = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-
+# def breakfast_meal():
+#     breakfast_dict = [
+#         "main_dish":{
+#             "Pancakes":["link", "image url"],
+#             "Waffles":["link", "image url"]
+#         },
+        
+#         "side_dish":{
+#             "Yogurt":["link", "image url"],
+#             "Fruit Bowl":["link", "image url"]
+#         },
+        
+#         "drinks":{
+#             "Apple Juice":["link", "image url"],
+#             "Orange Juice":["link", "image url"]
+#         }
+#     ]
+#     return random.choice(breakfast_dict)
 
 def get_main_dish():
     main_dish = [
-        "Eggs Benedict",
+        ["Eggs Benedict","https://www.simplyrecipes.com/wp-content/uploads/2010/04/eggs-benedict-vertical-a-1600.jpg", "https://www.simplyrecipes.com/recipes/eggs_benedict/"],
         "Pancakes",
         "Waffles",
         "French Toast",
@@ -30,7 +47,8 @@ def get_main_dish():
         "Quesadillas",
         "Breakfast Sandwhich"
         ]
-    return (random.choice(main_dish))
+    return main_dish[0]
+    # return random.choice(main_dish)
     
 def get_side_dish():
     side_dish = [
@@ -66,6 +84,12 @@ def get_drinks():
     
 class HomeHandler(webapp2.RequestHandler):
     def get(self):  # for a get request
+        main = get_main_dish()
+        the_variable_dict = {
+            "name": main[0],
+            "image": main[1],
+            "recipe": main[2]
+        }
     
     #     main_dish = get_main_dish()
     #     print(main_dish)
@@ -83,30 +107,22 @@ class HomeHandler(webapp2.RequestHandler):
             
     #     }
         
-        end_template=the_jinja_env.get_template("templates/welcome.html")
-        self.response.write(end_template.render())
+        end_template = the_jinja_env.get_template("templates/welcome.html")
+        self.response.write(end_template.render(the_variable_dict))
 
 
         
 class MealsHandler(webapp2.RequestHandler):
     def get(self):  # for a get request
-        main_dish = get_main_dish()
-        print(main_dish)
-        
-        side_dish = get_side_dish()
-        print(side_dish)
-        
-        drinks = get_drinks()
-        print(drinks)
-        
-        my_dictionary = {
-            'main': main_dish,
-            "sides": side_dish,
-            "drink": drinks
-            
+        main = get_main_dish()
+        the_variable_dict = {
+            "main_name": main[0],
+            "image": main[1],
+            "recipe": main[2],
+            "side_name"
         }
         
-        welcome_template = the_jinja_env.get_template('templates/meals.html')
+        welcome_template = the_jinja_env.get_template('templates/.html')
         self.response.write(welcome_template.render(my_dictionary))
         
 class HistoryHandler(webapp2.RequestHandler):
