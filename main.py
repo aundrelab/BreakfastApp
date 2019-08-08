@@ -37,10 +37,10 @@ def get_main_dish():
         ["Waffles","https://thesaltymarshmallow.com/wp-content/uploads/2018/08/belgian-waffles1.jpg","https://thesaltymarshmallow.com/homemade-belgian-waffle-recipe/"]
         ["French Toast","https://food.fnr.sndimg.com/content/dam/images/food/fullset/2008/3/26/0/IE0309_French-Toast.jpg.rend.hgtvcom.826.620.suffix/1431730431340.jpeg","https://www.foodnetwork.com/recipes/robert-irvine/french-toast-recipe-1951408"]
         ["Crepes","https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-basic-crepes-horizontal-1545245797.jpg?crop=0.6668xw:1xh;center,top&resize=980:*","https://www.delish.com/cooking/recipe-ideas/recipes/a52114/easy-basic-crepe-recipe/"]
-       ["Cereal","https://images.media-allrecipes.com/userphotos/250x250/338461.jpg","https://www.allrecipes.com/recipe/44162/homemade-cereal/"]
+        ["Cereal","https://images.media-allrecipes.com/userphotos/250x250/338461.jpg","https://www.allrecipes.com/recipe/44162/homemade-cereal/"]
         ["Breaksfast Burrito","https://images-gmi-pmc.edge-generalmills.com/b313435a-e9b8-49de-8088-ba7082c4d2dd.jpg","https://www.pillsbury.com/recipes/easy-breakfast-burritos/2fd0666e-79c3-40e8-a375-7be8e6db7360"]
         ["Acai Breaksfast Bowl","https://theforkedspoon.com/wp-content/uploads/2016/07/acai-bowl-5.jpg.webp","https://theforkedspoon.com/acai-bowl/"]
-       ["Huevos Rancheros","https://i2.wp.com/aspicyperspective.com/wp-content/uploads/2017/10/the-best-huevos-ranchero-recipe-16.jpg","https://i2.wp.com/aspicyperspective.com/wp-content/uploads/2017/10/the-best-huevos-ranchero-recipe-16.jpg"]
+        ["Huevos Rancheros","https://i2.wp.com/aspicyperspective.com/wp-content/uploads/2017/10/the-best-huevos-ranchero-recipe-16.jpg","https://i2.wp.com/aspicyperspective.com/wp-content/uploads/2017/10/the-best-huevos-ranchero-recipe-16.jpg"]
         ["Oat Meal","https://fitfoodiefinds.com/wp-content/uploads/2015/10/50-best-oatmeal-recipes.png","https://fitfoodiefinds.com/the-50-best-oatmeal-recipes-on-the-planet/"]
         ["Omelet","https://x9wsr1khhgk5pxnq1f1r8kye-wpengine.netdna-ssl.com/wp-content/uploads/basic-french-omelet-930x550.jpg","https://www.incredibleegg.org/recipe/basic-french-omelet/"]
         ["Country-Fried Steak","https://www.momontimeout.com/wp-content/uploads/2018/08/best-chicken-fried-steak-recipe.jpg","https://www.momontimeout.com/chicken-fried-steak-recipe-with-gravy/"]
@@ -52,17 +52,17 @@ def get_main_dish():
     
 def get_side_dish():
     side_dish = [
-        "Toast",
-        "Avocado Toast",
-        "Yogurt",
-        "Granola",
-        "Scones",
-        "Mixed Fruit",
-        "Sausage",
-        "Hash Browns",
-        "Bacon",
-        "Country Potatoes",
-        "Italian Sausage"
+        ["Toast","https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_inbody_900x506%2Fpublic%2F1459261213%2Fmarinated-piquillo-peppers-and-whipped-eggplant-toasts-XL-RECIPE0516.jpg%3Fitok%3DsoRIcO6w&w=200&c=sc&poi=face&q=85","https://www.foodandwine.com/slideshows/toast-recipes"]
+        ["Avocado Toast","https://cookieandkate.com/images/2012/04/avocado-toast-recipe-3.jpg","https://cookieandkate.com/avocado-toast-recipe/"]
+        ["Yogurt","https://i5.walmartimages.com/asr/6561f7ae-2d16-4782-b60d-4c2dfbeaf6b2_1.fba6264b145f97b1c1359f2ca0f04da9.jpeg?odnWidth=200&odnHeight=200&odnBg=ffffff","https://www.walmart.com/browse/food/yogurt-yogurt-drinks/976759_1071964_976788_1001470"]
+        ["Granola","",""]
+        ["Scones","",""]
+        ["Mixed Fruit","",""]
+        ["Sausage","",""]
+        ["Hash Browns","",""]
+        ["Bacon","",""]
+        ["Country Potatoes","",""]
+        ["Italian Sausage","",""]
         
         
         ]
@@ -70,15 +70,15 @@ def get_side_dish():
     
 def get_drinks():
     drinks = [
-        "Milk",
-        "Coffee",
-        "Orange Juice",
-        "Apple Juice",
-        "Smoothie",
-        "Water",
-        "Mango Juice",
-        "Cranberry Juice",
-        "Hot Chocolate",
+        ["Milk","",""]
+        ["Coffee","",""]
+        ["Orange Juice","",""]
+        ["Apple Juice","",""]
+        ["Smoothie","",""]
+        ["Water","",""]
+        ["Mango Juice","",""]
+        ["Cranberry Juice","",""]
+        ["Hot Chocolate","",""]
         ]
     return (random.choice(drinks))
     
