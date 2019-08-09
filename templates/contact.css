@@ -1,0 +1,132 @@
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*body{*/
+/*    background-color:#e0b472*/
+
+/*}*/
+
+/*.background{*/
+/*    background-image: url(../images/breakfastpic.jpg);*/
+/*    height: 50vh;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+
+
+/*.navigation-bar{*/
+/*    float: right;*/
+/*    list-style: none;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*.navigation-bar li{*/
+/*    display: inline-block;*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*    padding: 10px 5px;*/
+/*}*/
+
+/*.navigation-bar li a{*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    padding: 10px 25px;*/
+/*    font-family: "Times New Roman", Times, serif;*/
+/*    font-size: 15px;*/
+/*    font-weight: bolder;*/
+/*    width: auto;*/
+/*    border: 2px solid white;*/
+/*}*/
+
+/*.navigation-bar li.home a{*/
+/*    background-color: white;*/
+/*    color: black;*/
+/*}*/
+
+/*.navigation-bar li.home a:hover{*/
+/*    background-color: black;*/
+/*    color: white;*/
+/*    border: solid black;*/
+/*}*/
+
+
+
+/*.navigation-bar li a:hover{*/
+/*    border: 3px solid white;*/
+/*    color: black;*/
+/*    background-color: white;*/
+/*}*/
+
+/*.logo img{*/
+/*    width: 100px;*/
+    /*height: auto;*/
+/*    float: left;*/
+/*    padding-top: 5px;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*body{*/
+/*    font-family: monospace;*/
+/*}*/
+
+/*.row{*/
+/*    max-width: 1200px;*/
+/*    margin: auto;*/
+/*}*/
+
+/*.title{*/
+/*    position: absolute;*/
+/*    width: 1200px;*/
+/*    margin-left: 30px;*/
+/*    margin-top: 0px;*/
+/*}*/
+
+
+/*.name{*/
+/*    text-align: center;*/
+/*    margin-top: -215px;*/
+/*    margin-left: 65px;*/
+/*}*/
+/*.bottom_text{*/
+/*    margin-bottom: 10px*/
+/*}*/
+
+.page-container{
+   display: grid;
+   margin-left: 125px;
+   margin-right: 125px;
+   margin-top: 0px;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows:auto;
+   grid-template-areas:
+   "card1 card2";
+}
+#card1{
+   grid-area: card1;
+   border: 1px solid white;
+   padding: 4px;
+}
+.ai-img{
+   width: 100%;
+   height: 200px;
+}
+#card2{
+   grid-area: card2;
+   border: 1px solid white;
+   padding: 4px;
+}
+.team-img{
+   width: 100%;
+   height: 200px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
