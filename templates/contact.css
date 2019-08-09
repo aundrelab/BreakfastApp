@@ -1,97 +1,104 @@
-/**{*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*}*/
+*{
+    margin: 0;
+    padding: 0;
+}
 
-/*body{*/
-/*    background-color:#e0b472*/
+body{
+    background-color:#e0b472
 
-/*}*/
+}
 
-/*.background{*/
-/*    background-image: url(../images/breakfastpic.jpg);*/
-/*    height: 50vh;*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*}*/
-
-
-/*.navigation-bar{*/
-/*    float: right;*/
-/*    list-style: none;*/
-/*    margin-top: 20px;*/
-/*}*/
-
-/*.navigation-bar li{*/
-/*    display: inline-block;*/
-/*    width: auto;*/
-/*    height: auto;*/
-/*    padding: 10px 5px;*/
-/*}*/
-
-/*.navigation-bar li a{*/
-/*    color: white;*/
-/*    text-decoration: none;*/
-/*    padding: 10px 25px;*/
-/*    font-family: "Times New Roman", Times, serif;*/
-/*    font-size: 15px;*/
-/*    font-weight: bolder;*/
-/*    width: auto;*/
-/*    border: 2px solid white;*/
-/*}*/
-
-/*.navigation-bar li.home a{*/
-/*    background-color: white;*/
-/*    color: black;*/
-/*}*/
-
-/*.navigation-bar li.home a:hover{*/
-/*    background-color: black;*/
-/*    color: white;*/
-/*    border: solid black;*/
-/*}*/
+.background{
+    background-image: url(../images/breakfastpic.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
 
 
+.navigation-bar{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
 
-/*.navigation-bar li a:hover{*/
-/*    border: 3px solid white;*/
-/*    color: black;*/
-/*    background-color: white;*/
-/*}*/
+.navigation-bar li{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 10px 5px;
+}
 
-/*.logo img{*/
-/*    width: 100px;*/
-    /*height: auto;*/
-/*    float: left;*/
-/*    padding-top: 5px;*/
-/*    border-radius: 50%;*/
-/*}*/
+.navigation-bar li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    font-weight: bolder;
+    width: auto;
+    border: 2px solid white;
+}
 
-/*body{*/
-/*    font-family: monospace;*/
-/*}*/
+.navigation-bar li.home a{
+    background-color: white;
+    color: black;
+}
 
-/*.row{*/
-/*    max-width: 1200px;*/
-/*    margin: auto;*/
-/*}*/
-
-/*.title{*/
-/*    position: absolute;*/
-/*    width: 1200px;*/
-/*    margin-left: 30px;*/
-/*    margin-top: 0px;*/
-/*}*/
+.navigation-bar li.home a:hover{
+    background-color: black;
+    color: white;
+    border: solid black;
+}
 
 
-/*.name{*/
-/*    text-align: center;*/
-/*    margin-top: -215px;*/
-/*    margin-left: 65px;*/
-/*}*/
-/*.bottom_text{*/
-/*    margin-bottom: 10px*/
-/*}*/
+
+.navigation-bar li a:hover{
+    border: 3px solid white;
+    color: black;
+    background-color: white;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    float: left;
+    padding-top: 5px;
+    border-radius: 50%;
+}
+
+.logo2 img{
+    width: 100px;
+    height: auto;
+    float: right;
+    padding-top: 5px;
+    border-radius: 50%;
+}
+body{
+    font-family: monospace;
+}
+
+.row{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    width: 1200px;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+
+.name{
+    text-align: center;
+    margin-top: -215px;
+    margin-left: 65px;
+}
+.bottom_text{
+    margin-bottom: 10px
+}
 
 .page-container{
    display: grid;
@@ -129,4 +136,75 @@
 .column {
   flex: 33.33%;
   padding: 5px;
+}
+
+h3{
+   color:white;
+   font-size: 40px;
+   font-family:'Hind Guntur', sans-serif;
+   font-weight:bold;
+   text-align:center;
+}
+
+h5{
+      color:white;
+   font-size: 40px;
+   font-family:'Hind Guntur', sans-serif;
+   text-align:center;
+}
+
+p1{
+   color:white;
+   font-size: 40px;
+   font-family:'Hind Guntur', sans-serif;
+   font-weight:bold;
+   line-height:2;
+}
+
+
+h6{
+   color:white;
+   font-size: 40px;
+   font-family:'Hind Guntur', sans-serif;
+   line-height:2;
+}
+
+p2{
+     color:white;
+   font-size: 40px;
+   font-family:'Hind Guntur', sans-serif;
+   font-weight:bold;
+   line-height:2;
+}
+
+p3{
+    color:white;
+   font-size: 40px;
+   font-family:'Hind Guntur', sans-serif;
+   font-weight:bold;
+   line-height:2;
+}
+
+
+
+.footer {
+   display: flex;
+ list-style: none;
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: #865D16;
+ color: white;
+ text-align: center;
+ padding: 5px;
+ /word-spacing: 30px;/
+ justify-content: space-around;
+}
+a:hover{
+   background-color: #FFFBEF;
+   color: #865D16;
+   text-decoration: underline;
+   padding-left: 10px;
+   padding-right: 10px;
 }
