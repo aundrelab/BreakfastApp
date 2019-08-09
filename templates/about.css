@@ -1,3 +1,56 @@
+
+.navigation-bar{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.navigation-bar li{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 10px 5px;
+}
+
+.navigation-bar li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    font-weight: bolder;
+    width: auto;
+    border: 2px solid white;
+}
+
+.navigation-bar li.home a{
+    background-color: white;
+    color: black;
+}
+
+.navigation-bar li.home a:hover{
+    background-color: black;
+    color: white;
+    border: solid black;
+}
+
+
+
+.navigation-bar li a:hover{
+    border: 3px solid white;
+    color: black;
+    background-color: white;
+}
+
+.logo img{
+    width: 100px;
+    /*height: auto;*/
+    float: left;
+    padding-top: 5px;
+    border-radius: 50%;
+}
+
+
 #about{
     font-family:'Hind Guntur', sans-serif;
     color: white;
@@ -6,8 +59,8 @@
 
 h2{
     font-family:'Hind Guntur', sans-serif;
-    color: red;
-    font-size:30px;
+    color: white;
+    font-size:40px;
 }
 
 h3{
@@ -16,11 +69,18 @@ h3{
     font-size: 30px;
 }
 
+h5{
+  font-family:'Hind Guntur', sans-serif;
+    color: white;
+    font-size:40px;
+}
+
 p1{
     font-family: 'Hammersmith One', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     line-height:2;
     color:white;
+    font-weight:bold;
 }
 
 .footer {
@@ -42,7 +102,7 @@ p1{
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  font-size:60px;
+  font-size:65px;
   font-family: 'Paytone One', sans-serif;
   text-align:center;
   font-weight:bold;
@@ -50,3 +110,12 @@ p1{
 body{background-color:rgb(0,0,0);
 background-image:url(http://www.zingerbugimages.com/backgrounds/rainbow_stars.gif);
 background-position:top left;background-repeat:repeat;background-attachment:fixed;}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
