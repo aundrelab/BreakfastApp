@@ -19,10 +19,10 @@ Figuring out what you want to eat for breakfast for that day.
 
 ## Contributors
 
-Aundre Labrador – [Github](https://github.com/AlexFue) – [Linkedin](https://www.linkedin.com/in/aundrelabrador/)
-Alex Espinoza-Fuentes – [Github](https://github.com/aundrelab) – [Linkedin](https://www.linkedin.com/in/alex-espinoza-fuentes/)
-Edward Cluster – [Github](https://github.com/ecluster) – [Linkedin](https://www.linkedin.com/in/edward-cluster/)
-Rebecca Avila
+* Aundre Labrador – [Github](https://github.com/AlexFue) – [Linkedin](https://www.linkedin.com/in/aundrelabrador/)
+* Alex Espinoza-Fuentes – [Github](https://github.com/aundrelab) – [Linkedin](https://www.linkedin.com/in/alex-espinoza-fuentes/)
+* Edward Cluster – [Github](https://github.com/ecluster) – [Linkedin](https://www.linkedin.com/in/edward-cluster/)
+* Rebecca Avila
 
 ## Contributing
 
